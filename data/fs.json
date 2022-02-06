@@ -1,0 +1,192 @@
+{
+  "id": "3c61ffca-8b14-4ce5-9124-6b0af9ab02f7",
+  "name": "root",
+  "path": "/root/",
+  "fullpath": "/root/",
+  "type": "folder",
+  "parent": null,
+  "extension": null,
+  "data": null,
+  "executable": false,
+  "depth": 0,
+  "children": [
+    {
+      "id": "7177e33b-9b37-4072-a961-b1f4e2a63900",
+      "name": "documents",
+      "path": "/root/documents/",
+      "fullpath": "/root/documents/",
+      "type": "folder",
+      "parent": "3c61ffca-8b14-4ce5-9124-6b0af9ab02f7",
+      "extension": null,
+      "data": null,
+      "executable": false,
+      "depth": 1,
+      "children": [
+        {
+          "id": "a922412f-08d5-4922-b265-6ecc2c5e5bfa",
+          "name": "work",
+          "path": "/root/documents/path/",
+          "fullpath": "/root/documents/path/",
+          "type": "folder",
+          "parent": "7177e33b-9b37-4072-a961-b1f4e2a63900",
+          "extension": null,
+          "data": null,
+          "executable": false,
+          "depth": 2,
+          "children": []
+        },
+        {
+          "id": "4bcc5119-b348-4828-ad49-47d5fae3d1df",
+          "name": "resume.txt",
+          "path": "/root/documents/",
+          "fullpath": "/root/documents/resume.txt",
+          "type": "file",
+          "parent": "7177e33b-9b37-4072-a961-b1f4e2a63900",
+          "extension": "txt",
+          "data": "data is here!",
+          "executable": false,
+          "depth": 2
+        },
+        {
+          "id": "a3df2422-82ed-4c9d-a16c-4676de87d575",
+          "name": "references.txt",
+          "path": "/root/documents/",
+          "fullpath": "/root/documents/resume.pdf",
+          "type": "file",
+          "parent": "7177e33b-9b37-4072-a961-b1f4e2a63900",
+          "extension": "txt",
+          "data": "You can find all my references in here!",
+          "executable": false,
+          "depth": 2
+        }
+      ]
+    },
+    {
+      "id": "05b873e6-368d-4f5b-b4dd-88ee00dcdd70",
+      "name": "projects",
+      "path": "/root/projects/",
+      "fullpath": "/root/projects/",
+      "type": "folder",
+      "parent": "3c61ffca-8b14-4ce5-9124-6b0af9ab02f7",
+      "extension": null,
+      "data": null,
+      "executable": false,
+      "depth": 1,
+      "children": [
+        {
+          "id": "b1006d6e-461b-4726-b98c-9792df9e064d",
+          "name": "personal",
+          "path": "/root/projects/personal/",
+          "fullpath": "/root/projects/personal/",
+          "type": "folder",
+          "parent": "05b873e6-368d-4f5b-b4dd-88ee00dcdd70",
+          "extension": null,
+          "data": null,
+          "executable": false,
+          "depth": 2,
+          "children": []
+        },
+        {
+          "id": "8c310baf-f221-4613-8f11-67b75b6c2491",
+          "name": "algntc.txt",
+          "path": "/root/projects/",
+          "fullpath": "/root/projects/algntc.txt",
+          "type": "file",
+          "parent": "05b873e6-368d-4f5b-b4dd-88ee00dcdd70",
+          "extension": "txt",
+          "data": "algnt text and link to the repo!",
+          "executable": false,
+          "depth": 2
+        },
+        {
+          "id": "39799c98-90cd-40f3-8de1-f62c314b7976",
+          "name": "gennew asjdiasjdais asjdasi a sdsdsd.txt",
+          "path": "/root/projects/",
+          "fullpath": "/root/projects/gennew asjdiasjdais asjdasi a sdsdsd.txt",
+          "type": "file",
+          "parent": "05b873e6-368d-4f5b-b4dd-88ee00dcdd70",
+          "extension": "txt",
+          "data": "This page info and link to the source code!",
+          "executable": false,
+          "depth": 2
+        },
+        {
+          "id": "e5656691-b76c-4b0c-b646-935ec2234896",
+          "name": "github.lnk",
+          "path": "/root/projects/",
+          "fullpath": "/root/projects/github.lnk",
+          "type": "file",
+          "parent": "05b873e6-368d-4f5b-b4dd-88ee00dcdd70",
+          "extension": "lnk",
+          "data": "You can find all my repos in here!",
+          "executable": false,
+          "depth": 2
+        }
+      ]
+    },
+    {
+      "id": "7484d82c-2d09-401d-b31f-ebec6f2cb878",
+      "name": "games",
+      "path": "/root/games/",
+      "fullpath": "/root/games/",
+      "type": "folder",
+      "parent": "3c61ffca-8b14-4ce5-9124-6b0af9ab02f7",
+      "extension": null,
+      "data": null,
+      "executable": false,
+      "depth": 1,
+      "children": [
+        {
+          "id": "01de2a0c-82ad-4115-8c72-04d8f24545d3",
+          "name": "tictactoe.app",
+          "path": "/root/games/",
+          "fullpath": "/root/games/tictactoe.app",
+          "type": "file",
+          "parent": "7484d82c-2d09-401d-b31f-ebec6f2cb878",
+          "extension": "app",
+          "data": "/run game script",
+          "executable": true,
+          "depth": 2
+        }
+      ]
+    },
+    {
+      "id": "5818b3f2-dfa1-4407-a909-d810c3093334",
+      "name": "desktop",
+      "path": "/root/desktop/",
+      "fullpath": "/root/desktop/",
+      "type": "folder",
+      "parent": "3c61ffca-8b14-4ce5-9124-6b0af9ab02f7",
+      "extension": null,
+      "data": null,
+      "executable": false,
+      "depth": 1,
+      "children": [
+        {
+          "id": "04633775-1fcb-496c-8376-063283cf087a",
+          "name": "Bruno's Resumè.pdf",
+          "path": "/root/desktop/",
+          "fullpath": "/root/desktop/Bruno's Resumè.pdf",
+          "type": "lnk",
+          "parent": "5818b3f2-dfa1-4407-a909-d810c3093334",
+          "extension": "pdf",
+          "data": "https://www.linkedin.com/in/bruno-charamba",
+          "executable": false,
+          "depth": 2
+        },
+        {
+          "id": "a5d27cd0-e035-4f59-99c5-ecd997d0eba8",
+          "name": "Reasons to code.txt",
+          "path": "/root/desktop/",
+          "fullpath": "/root/desktop/Reasons to code.txt",
+          "type": "lnk",
+          "parent": "5818b3f2-dfa1-4407-a909-d810c3093334",
+          "extension": "txt",
+          "data": "https://www.linkedin.com/in/bruno-charamba",
+          "executable": false,
+          "depth": 2
+        }
+      ]
+    }
+  ]
+}
