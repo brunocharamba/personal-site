@@ -172,7 +172,8 @@
           "extension": "pdf",
           "data": "https://www.linkedin.com/in/bruno-charamba",
           "executable": false,
-          "depth": 2
+          "depth": 2,
+          "url": "/files/bruno-resume-2022.pdf"
         },
         {
           "id": "a5d27cd0-e035-4f59-99c5-ecd997d0eba8",
@@ -182,7 +183,7 @@
           "type": "lnk",
           "parent": "5818b3f2-dfa1-4407-a909-d810c3093334",
           "extension": "txt",
-          "data": "https://www.linkedin.com/in/bruno-charamba",
+          "data": "<div>teste</div><p>aaaa</p><strong>saaa</strong>",
           "executable": false,
           "depth": 2
         }

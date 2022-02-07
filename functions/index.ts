@@ -28,7 +28,7 @@ export const openFile = (file: IFile, topmost: number) => {
     case EAppicationType.Reader:
       return { id: uuid(), state: EWindowStatus.Window, type: appType, zIndex: topmost, size: defaultSize, file } as IReaderWindow;
     case EAppicationType.Editor:
-      return { id: uuid(), state: EWindowStatus.Window, type: appType, zIndex: topmost, size: defaultSize } as IEditorWindow;
+      return { id: uuid(), state: EWindowStatus.Window, type: appType, zIndex: topmost, size: defaultSize, file } as IEditorWindow;
     case EAppicationType.Manager:
       return { id: uuid(), state: EWindowStatus.Window, type: appType, zIndex: topmost, size: defaultSize } as IManagerWindow;
     case EAppicationType.TicTacToe:

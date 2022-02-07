@@ -45,7 +45,7 @@ export interface IManagerWindowProps {
 }
 
 export interface IEditorWindow extends IWindow {
-  extra?: any;
+  file?: IFile;
 }
 
 export interface IEditorWindowProps {
