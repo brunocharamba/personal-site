@@ -18,13 +18,17 @@ import TicTacToeWindow from "../components/Window/TicTacToeWindow";
 
 import fs from "../data/fs.json";
 import { useEffect } from "react";
-import { addFileSystem, selectFileById, selectFilesbByParentPath } from "../store/reducers/fileSystem";
 import { calculateDesktopIconPosition } from "../functions";
+import SidePanel from "../components/SidePanel";
+
+// redux select
+import { addFileSystem, selectFileById, selectFilesbByParentPath } from "../store/reducers/fileSystem";
+import { selectOpenSidePanel } from "../store/reducers/helperSidePanel";
 
 const Home: NextPage = () => {
   const windows = useAppSelector(selectAllWindows);
-  //const desktopFiles = useAppSelector(selectAllWindows);
   const desktopFiles = useAppSelector(selectFilesbByParentPath("/root/desktop/"));
+  const isHelperSidePanelOpen = useAppSelector(selectOpenSidePanel);
   const currentFile = useAppSelector(selectFileById("04633775-1fcb-496c-8376-063283cf087a"));
   const topmost = useAppSelector(selectTopmostValue);
 
@@ -62,6 +66,10 @@ const Home: NextPage = () => {
     });
   };
 
+  const renderSidePanel = () => {
+    return <SidePanel />;
+  };
+
   useEffect(() => {
     let local = localStorage.getItem("fs");
     if (!local) {
@@ -84,6 +92,7 @@ const Home: NextPage = () => {
       <main className="flex justify-center items-center h-screen overscroll-y-none">
         {renderDesktop()}
         {renderWindows()}
+        {isHelperSidePanelOpen && renderSidePanel()}
       </main>
       <footer className="z-50">
         <TaskBar />

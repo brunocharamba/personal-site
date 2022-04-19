@@ -29,6 +29,32 @@ const _addFolder = (state: IFileSystemState, action: PayloadAction<[string, IFil
   // side effect to save on to local storage
 };
 
+const _changeFileContent = (state: IFileSystemState, action: PayloadAction<[string, IFile]>) => {
+  if (!action.payload) return;
+
+  const content = action.payload[0];
+  const file = action.payload[1];
+
+  let currentFile = findFile(file.id, state.filesystem as IFile);
+
+  if (!currentFile) return;
+
+  currentFile.data = content;
+
+  // let local = localStorage.getItem("fs");
+  // if (!local) {
+  //   const stringFs = JSON.stringify(fs);
+  //   localStorage.setItem("fs", stringFs);
+  //   local = stringFs;
+  // }
+  // const localFilesystem: IFile = JSON.parse(local);
+  // dispatch(addFileSystem(localFilesystem));
+
+  localStorage.setItem("fs", JSON.stringify(state.filesystem));
+
+  console.log("fs", current(currentFile), current(state.filesystem));
+};
+
 // selectors
 export const selectFilesystem = (state: RootState) => state.fileSystem.filesystem;
 export const selectFileById = (id: string | null) => (state: RootState) => state.fileSystem.filesystem && findFile(id, state.fileSystem.filesystem);
@@ -41,9 +67,10 @@ export const fileSystemSlicer: Slice<IFileSystemState> = createSlice({
   reducers: {
     addFileSystem: _addFileSystem,
     addFolder: _addFolder,
+    changeFileContent: _changeFileContent,
   },
 });
 
-export const { addFileSystem, addFolder } = fileSystemSlicer.actions;
+export const { addFileSystem, addFolder, changeFileContent } = fileSystemSlicer.actions;
 
 export default fileSystemSlicer.reducer;

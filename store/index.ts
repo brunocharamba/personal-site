@@ -2,11 +2,13 @@ import { configureStore } from "@reduxjs/toolkit";
 import SampleReducer from "./reducers/counter";
 import WindowManagerReducer from "./reducers/windowManager";
 import FileSystemReducer from "./reducers/fileSystem";
+import HelperSidePanelReducer from "./reducers/helperSidePanel";
 
 export const store = configureStore({
   reducer: {
     windowManager: WindowManagerReducer,
     fileSystem: FileSystemReducer,
+    helperSidePanel: HelperSidePanelReducer,
     counter: SampleReducer,
   },
 });

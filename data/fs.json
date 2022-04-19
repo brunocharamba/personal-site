@@ -43,7 +43,7 @@
           "type": "file",
           "parent": "7177e33b-9b37-4072-a961-b1f4e2a63900",
           "extension": "txt",
-          "data": "data is here!",
+          "data": "",
           "executable": false,
           "depth": 2
         },
@@ -54,8 +54,8 @@
           "fullpath": "/root/documents/resume.pdf",
           "type": "file",
           "parent": "7177e33b-9b37-4072-a961-b1f4e2a63900",
-          "extension": "txt",
-          "data": "You can find all my references in here!",
+          "extension": "pdf",
+          "data": "",
           "executable": false,
           "depth": 2
         }
@@ -106,7 +106,7 @@
           "type": "file",
           "parent": "05b873e6-368d-4f5b-b4dd-88ee00dcdd70",
           "extension": "txt",
-          "data": "This page info and link to the source code!",
+          "data": "",
           "executable": false,
           "depth": 2
         },
@@ -183,7 +183,7 @@
           "type": "lnk",
           "parent": "5818b3f2-dfa1-4407-a909-d810c3093334",
           "extension": "txt",
-          "data": "<div>teste</div><p>aaaa</p><strong>saaa</strong>",
+          "data": "",
           "executable": false,
           "depth": 2
         }

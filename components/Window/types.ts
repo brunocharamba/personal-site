@@ -55,3 +55,5 @@ export interface IEditorWindowProps {
 export interface ITicTacToeWindow extends IWindow {
   extra?: any;
 }
+
+export interface ISidePanel {}

@@ -9,7 +9,7 @@ export interface IDate {
 
 const INTERVAL = 1000 * 60; // 1 min
 
-const Clock: React.FC = () => {
+const ClockBarButton: React.FC = () => {
   const [date, setDate] = useState<IDate>();
 
   const handleTimeUpdate = () => {
@@ -32,4 +32,4 @@ const Clock: React.FC = () => {
   );
 };
 
-export default Clock;
+export default ClockBarButton;
