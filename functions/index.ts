@@ -104,6 +104,7 @@ export const getOnlyFolders = (node: IFile): IFile[] => {
 
   return node.children.reduce(function (r, a) {
     var temp: IFile[] = getOnlyFolders(a);
-    return r.concat(a.type === "folder" ? Object.assign({}, a, { children: temp }) : []);
+    // return r.concat(a.type === "folder" ? Object.assign({}, a, { children: temp }) : []);
+    return (r as any).concat(a.type === "folder" ? Object.assign({}, a, { children: temp }) : []);
   }, []);
 };
