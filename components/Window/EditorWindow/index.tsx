@@ -13,15 +13,20 @@ import "draft-js/dist/Draft.css";
 const EditorWindow: React.FC<IEditorWindowProps> = (props) => {
   const { content } = props;
 
-  const [editorState, setEditorState] = React.useState(() => EditorState.createEmpty());
+  const [editorState, setEditorState] = React.useState<any>(() => EditorState.createEmpty());
   const dispatch = useAppDispatch();
 
   const editor = useRef(null);
   const topmost = useAppSelector(selectTopmostValue);
 
-  const focusEditor = () => editor?.current.focus();
+  const focusEditor = () => {
+    if (!editor) return;
+    if (!editor?.current) return;
 
-  const onBoldClick = (e: MouseEvent) => {
+    (editor.current as any).focus();
+  };
+
+  const onBoldClick = (e: any) => {
     // e = e || window.event;
     // e.preventDefault();
 
@@ -29,7 +34,7 @@ const EditorWindow: React.FC<IEditorWindowProps> = (props) => {
     setEditorState(nextState);
   };
 
-  const onItalicClick = (e: MouseEvent) => {
+  const onItalicClick = (e: any) => {
     // e = e || window.event;
     // e.preventDefault();
     const nextState = RichUtils.toggleInlineStyle(editorState, "ITALIC");
