@@ -1,4 +1,4 @@
-import React, { useEffect, useRef, useState } from "react";
+import React, { ChangeEvent, useEffect, useRef, useState } from "react";
 import { FaChevronRight } from "react-icons/fa";
 
 import Window from "../../../components/Window";
@@ -14,7 +14,7 @@ const TerminalWindow: React.FC<ITerminalWindowProps> = (props) => {
   const [inputText, setInputText] = useState<string>("");
   const [history, setHistory] = useState<string[]>([]);
   const ref = useRef<HTMLDivElement | null>(null);
-  const inputRef = useRef<HTMLDivElement | null>(null);
+  const inputRef = useRef<HTMLInputElement | null>(null);
 
   const topmost = useAppSelector(selectTopmostValue);
 
@@ -30,8 +30,7 @@ const TerminalWindow: React.FC<ITerminalWindowProps> = (props) => {
     inputRef?.current?.focus();
   };
 
-  // const handleSize = () => content.size?.height + 25;
-  const handleSize = () => content.size?.height - 25;
+  const handleSize = () => (content.size as any).height - 25;
 
   const handleCommand = () => {
     const response = commandSwitch(inputText);
@@ -61,8 +60,8 @@ const TerminalWindow: React.FC<ITerminalWindowProps> = (props) => {
               type="text"
               className="flex flex-1 ml-1 mr-2 bg-gray-800 text-green-300 focus:outline-none"
               value={inputText}
-              onChange={(e: ChangeEvent<HTMLInputElement>) => setInputText(e.target.value)}
-              onKeyPress={(e: KeyboardEvent<HTMLInputElement>) => e.key === "Enter" && handleCommand()}
+              onChange={(e) => setInputText(e.target.value)}
+              onKeyPress={(e) => e.key === "Enter" && handleCommand()}
             />
           </div>
           {/* <div ref={ref} /> */}
