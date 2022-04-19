@@ -14,7 +14,8 @@ const tooltip: string = "To be developed";
 const ManagerPathBar: React.FC<ManagerPathBarProps> = (props) => {
   const { file, openFolder } = props;
 
-  const parentFolder = file && useAppSelector(selectFileById(file?.parent));
+  // const parentFolder = file && useAppSelector(selectFileById(file?.parent));
+  const parentFolder = useAppSelector(selectFileById(file ? file.parent : null));
 
   const UpStyle = parentFolder ? "hover:text-gray-500 cursor-pointer" : "text-gray-600 cursor-auto";
 

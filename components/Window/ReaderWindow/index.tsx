@@ -16,7 +16,7 @@ const ReaderWindow: React.FC<IReaderWindowProps> = (props) => {
         <object data={content.file?.url} type="application/pdf" width="100%">
           <param name="view" value="Fit" />
           <p>
-            Your web browser doesn't have a PDF plugin.
+            Your web browser doesn&apos;t have a PDF plugin.
             <a href={content.file?.url}>click here to download the PDF file.</a>
           </p>
         </object>
