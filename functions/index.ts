@@ -70,7 +70,7 @@ export const calculateDesktopIconPosition = (pos: IPosition, index: number): IPo
 
 // FILESYSTEM
 
-export const findFile = (id: string, node: IFile): IFile | null => {
+export const findFile = (id: string | null, node: IFile): IFile | null => {
   if (node.id === id) return node;
   if (!node || !node.children) return null;
 
